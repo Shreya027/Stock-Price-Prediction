@@ -58,12 +58,9 @@ from keras.layers import Dense
 # Initialising the ANN
 classifier = Sequential()
 
-# Adding the input layer and the first hidden layer
+
 classifier.add(Dense(output_dim = 14, init = 'uniform', activation = 'relu', input_dim = 27))
 classifier.add(Dense(output_dim = 14, init = 'uniform', activation = 'relu'))
-
-# Adding the second hidden layer3
-# Adding the output layer
 classifier.add(Dense(output_dim = 1, init = 'uniform', activation = 'sigmoid'))
 
 # Compiling the ANN
